@@ -61,6 +61,11 @@
   .warn { display:flex; gap:9px; align-items:flex-start; color:var(--warn); font-weight:600; font-size:.82rem; margin:12px 2px 8px; }
   .warn svg { flex:none; width:19px; height:19px; margin-top:0; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
 
+  .related { display:flex; align-items:center; justify-content:space-between; gap:12px; text-decoration:none; color:var(--ink); background:var(--card); border:1px solid var(--card-line); border-radius:18px; padding:12px 14px; margin:0 0 12px; font-size:.88rem; font-weight:600; }
+  .related span { color:var(--muted); font-weight:500; display:block; font-size:.78rem; }
+  .related b { color:var(--brand); white-space:nowrap; }
+  .related:hover { border-color:var(--brand); }
+
   details { color:var(--muted); font-size:.82rem; margin:0 2px; }
   summary { cursor:pointer; font-weight:600; margin-bottom:4px; }
 </style>
@@ -107,6 +112,11 @@
     <div class="big" id="oil">0 мл</div>
     <div class="sub" id="detail"></div>
   </div>
+
+  <a class="related" href="https://kakvaveriga.com/">
+    <div>Каква верига за резачката?<span>Намерете подходящата верига по марка, модел или код</span></div>
+    <b>Към сайта &rarr;</b>
+  </a>
 
   <div class="warn">
     <svg viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
